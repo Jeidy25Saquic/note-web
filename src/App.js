@@ -22,4 +22,26 @@ function App() {
   );
 }
 
+//** Henry */
+function Henry() {
+  return(
+    <div className="App">
+      <body>
+      <p>
+          XDXDXD
+      </p>
+      </body>
+    </div>
+
+
+  );
+
+}
+
+//** Geo */
+function Geo() {
+
+
+}
+
 export default App;
