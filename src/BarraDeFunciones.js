@@ -13,7 +13,7 @@ function BarraDeFunciones() {
       <button className="boton-funcion">Estadísticas</button>
       <button className="boton-funcion">Comentarios</button>
       <button className="boton-funcion">Presentar</button>
-      <button className="boton-funcion">Compartir</button>
+      <button className="boton-funcion">Agregar Tarea</button>
     </div>
   );
 }
