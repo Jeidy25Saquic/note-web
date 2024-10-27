@@ -1,0 +1,30 @@
+.barra-de-funciones {
+    display: flex;
+    flex-direction: column; /* Orienta la barra verticalmente */
+    align-items: center;
+    background: linear-gradient(to bottom, #00c4cc, #5f2cd4);
+    padding: 10px;
+    border-radius: 5px 0 0 5px; /* Bordes redondeados en el lado izquierdo */
+    position: fixed; /* Fija la barra en la pantalla */
+    top: 0;
+    right: 0; /* Ancla la barra al borde derecho */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+  }
+  
+  .boton-funcion {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin: 5px 0; /* Espaciado vertical entre los botones */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Hace que los botones ocupen todo el ancho de la barra */
+    text-align: center;
+  }
+  
+  .boton-funcion:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  

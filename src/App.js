@@ -1,14 +1,16 @@
 import './App.css';
 import Section from './Section'
+import BarraDeFunciones from './BarraDeFunciones'; // Importa la barra de herramientass
 import Notes from './Notes';
 import Panel from './Panel';
 function App() {
   return (
     <div className = "Principal">
-      <Panel></Panel>
-
-      //Henry
-      <Section></Section>
+      {/* Barra de tareas, colocada sobre los botones existentes */}
+      <BarraDeFunciones />
+      <Section  />
+      
+      
       
       
       //Geo
