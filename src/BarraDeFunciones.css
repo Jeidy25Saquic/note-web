@@ -25,11 +25,10 @@
   }
   
   .boton-funcion {
-    /* ... otros estilos del botón ... */
-    transition: all 0.3s ease; /* Añade una transición suave */
+    transition: all 0.3s ease;
   }
   
   .boton-funcion:hover {
     background-color: rgba(255, 204, 0, 0.733);
-    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+    transform: scale(1.1);
   }
