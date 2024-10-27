@@ -1,3 +1,4 @@
+
 .barra-de-funciones {
     display: flex;
     flex-direction: column; /* Orienta la barra verticalmente */
@@ -12,6 +13,7 @@
   }
   
   .boton-funcion {
+    font-family: 'LazyDog', sans-serif;
     background-color: yellow;
     color: rgb(0, 0, 0);
     border: none;
@@ -22,6 +24,7 @@
     transition: background-color 0.3s;
     width: 100%; /* Hace que los botones ocupen todo el ancho de la barra */
     text-align: center;
+    font-size: 3.5vh;
   }
   
   .boton-funcion {

@@ -6,3 +6,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.lazydog-font * {
+  font-family: 'LazyDog', sans-serif;
+}
