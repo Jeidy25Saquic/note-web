@@ -1,8 +1,7 @@
 import './App.css';
 import Section from './Section'
-import BarraDeFunciones from './BarraDeFunciones'; // Importa la barra de herramientass
+import BarraDeFunciones from './BarraDeFunciones';
 import Notes from './Notes';
-import Panel from './Panel';
 
 function App() {
   return (

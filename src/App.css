@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'LazyDog';
+  src: url('./LazyDog.woff2') format('woff2');
+}
+
 .App {
+  font-family: 'LazyDog', sans-serif;
   text-align: center;
 }
 .h1
