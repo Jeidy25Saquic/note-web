@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Sidebar from './Sidebar';
+import TaskCard from './TaskCard';
+import Modal from './Modal';
+
+import React, { useState } from 'react';
+
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedTask, setSelectedTask] = useState(null);
+
+  const handleAddTask = () => {
+    const newTask = { title: 'Nueva Tarea', description: 'Descripción de ejemplo', students: ['Estudiante 1'] };
+    setTasks([...tasks, newTask]);
+  };
+
+  const handleOpenModal = (task) => {
+    setSelectedTask(task);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedTask(null);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar onAddTask={handleAddTask} />
+      <div className="board">
+        {tasks.map((task, index) => (
+          <TaskCard key={index} task={task} onClick={handleOpenModal} />
+        ))}
+      </div>
+      {isModalOpen && <Modal task={selectedTask} onClose={handleCloseModal} />}
     </div>
   );
 }
