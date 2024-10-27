@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import './Section.css';
 
-function Section() {
+function Section({ onAddTablero }) {
   const [buttonCount, setButtonCount] = useState(3);
-  const [selectedButton, setSelectedButton] = useState(null); // Estado para el botón seleccionado
-  const [buttonTexts, setButtonTexts] = useState(Array(buttonCount).fill('Editar')); // Estado para los textos de los botones
-  const [isEditable, setIsEditable] = useState(Array(buttonCount).fill(true)); // Estado para controlar si el botón es editable
+  const [selectedButton, setSelectedButton] = useState(null);
+  const [buttonTexts, setButtonTexts] = useState(Array(buttonCount).fill('Editar'));
+  const [isEditable, setIsEditable] = useState(Array(buttonCount).fill(true));
 
   const handleAddButton = () => {
+    // Llama a la función de App para agregar un nuevo tablero
+    onAddTablero();
+
+    // Agrega un nuevo botón en la interfaz de Section
     setButtonCount(buttonCount + 1);
-    setButtonTexts([...buttonTexts, 'Editar']); // Agrega un nuevo botón con el texto "Editar"
-    setIsEditable([...isEditable, true]); // Hace el nuevo botón editable
+    setButtonTexts([...buttonTexts, 'Editar']);
+    setIsEditable([...isEditable, true]);
   };
 
   const handleButtonClick = (index) => {
-    // Solo permite editar si el botón aún es editable
     if (isEditable[index]) {
       setSelectedButton(index);
     }
@@ -27,11 +30,10 @@ function Section() {
   };
 
   const handleBlur = (index) => {
-    // Cuando el usuario termina de editar, marca el botón como no editable
     const updatedEditable = [...isEditable];
     updatedEditable[index] = false;
     setIsEditable(updatedEditable);
-    setSelectedButton(null); // Sale del modo edición
+    setSelectedButton(null);
   };
 
   return (
@@ -44,7 +46,7 @@ function Section() {
                 type="text"
                 value={buttonTexts[index]}
                 onChange={(e) => handleTextChange(index, e.target.value)}
-                onBlur={() => handleBlur(index)} // Marca el botón como no editable al perder el foco
+                onBlur={() => handleBlur(index)}
                 className="button-input"
               />
             ) : (
