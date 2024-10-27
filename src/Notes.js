@@ -1,19 +1,20 @@
-import React from 'react'
-import './Notes.css';
+import React, { useState } from "react";
+import "./Notes.css";
 
 const Notes = () => {
-
-    let user = "Estudiante";
+  const [numberOfNotes] = useState(4);
 
   return (
-    <div className = "Nota">
-      <h1 id='Titulo1'>
+    <div className="Nota">
+      <h1 id="Titulo1">
         <ul>
-            Mi primer Componente :v
+          {Array.from({ length: numberOfNotes }, (_, index) => (
+            <li key={index}>Nota {index + 1}</li>
+          ))}
         </ul>
       </h1>
     </div>
-  )
-}
+  );
+};
 
-export default Notes
+export default Notes;

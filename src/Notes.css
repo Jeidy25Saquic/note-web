@@ -1,9 +1,9 @@
 .Nota {
-    background-color: brown;
-
-}
-
-.Titulo1 {
-    text-align: center;
-
-}
+    background-color: rgb(228, 191, 6);
+    padding: 20px;
+  }
+  
+  #Titulo1 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+  }
