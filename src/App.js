@@ -5,11 +5,11 @@ import Notes from './Notes'
 function App() {
   return (
     <div className="Note">
-      //**Henry */
+      //Henry
       <Section></Section>
 
       
-      //** Geo */
+      //Geo
       <Notes></Notes>
     </div>
   );
