@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column; /* Orienta la barra verticalmente */
     align-items: center;
-    background: linear-gradient(to bottom, #00c4cc, #5f2cd4);
+    background: linear-gradient(to bottom, #000000cf, #000000ac);
     padding: 10px;
     border-radius: 5px 0 0 5px; /* Bordes redondeados en el lado izquierdo */
     position: fixed; /* Fija la barra en la pantalla */
@@ -12,8 +12,8 @@
   }
   
   .boton-funcion {
-    background-color: transparent;
-    color: white;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
     border: none;
     margin: 5px 0; /* Espaciado vertical entre los botones */
     padding: 10px 15px;
@@ -24,7 +24,12 @@
     text-align: center;
   }
   
-  .boton-funcion:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+  .boton-funcion {
+    /* ... otros estilos del botón ... */
+    transition: all 0.3s ease; /* Añade una transición suave */
   }
   
+  .boton-funcion:hover {
+    background-color: rgba(255, 204, 0, 0.733);
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+  }
