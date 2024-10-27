@@ -7,7 +7,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease; /* Transición para el efecto de escala */
-    font-weight: 800;
+    font-size: 4vh;
   }
   
   .button-container {
