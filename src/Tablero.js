@@ -1,25 +1,16 @@
-import React, { useState } from 'react';
+// Tablero.js
+import React from 'react';
 import './Tablero.css';
-function Tablero({ title }) {
-  const [notes, setNotes] = useState([]);
 
-  const handleAddNote = () => {
-    const newNote = { title: 'Nueva Nota', description: 'Descripción de la nota' };
-    setNotes([...notes, newNote]);
-  };
-
+function Tablero({ title, notes }) {
   return (
     <div className="tablero">
-      <h2>{title}</h2>
-      <button onClick={handleAddNote}>Agregar Nota</button>
-      <div className="notas-list">
+      <h3>{title}</h3>
+      <ul>
         {notes.map((note, index) => (
-          <div key={index} className="nota">
-            <h3>{note.title}</h3>
-            <p>{note.description}</p>
-          </div>
+          <li key={index}>{note}</li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

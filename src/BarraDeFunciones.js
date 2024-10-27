@@ -1,8 +1,7 @@
-// BarraDeFunciones.js
 import React from 'react';
 import './BarraDeFunciones.css';
 
-function BarraDeFunciones({ onAddTablero }) { // Recibe la función como prop
+function BarraDeFunciones({ onAddNote }) {
   return (
     <div className="barra-de-funciones">
       <button className="boton-funcion">Archivo</button>
@@ -13,9 +12,10 @@ function BarraDeFunciones({ onAddTablero }) { // Recibe la función como prop
       <button className="boton-funcion">Estadísticas</button>
       <button className="boton-funcion">Comentarios</button>
       <button className="boton-funcion">Presentar</button>
-      <button className="boton-funcion" onClick={onAddTablero}>AGREGAR<br/>TAREA</button>
+      <button className="boton-funcion" onClick={onAddNote}>AGREGAR<br/>TAREA</button>
     </div>
   );
 }
 
 export default BarraDeFunciones;
+
