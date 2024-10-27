@@ -7,8 +7,9 @@ const Panel = () => {
       <div className="content">
         {<h1>Contenido</h1>}
       </div>
+
       <div className="panel">
-        {<h1>Elements</h1>}
+        {<h1 className='TituloPanel'>Elements</h1>}
       </div>
     </div>
   );

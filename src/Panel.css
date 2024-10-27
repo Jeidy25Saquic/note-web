@@ -4,17 +4,31 @@
   width: 300px; /* Ajusta el ancho del panel según tus necesidades */
   height: 20vh; /* Ocupa toda la altura de la viewport */
 }
+/*Aqui va lo de Henry*/
 .container {
   display: flex;
-  height: 10vh; /* Ocupa toda la altura de la viewport */
-  color: black;
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  background-color: aqua;
 }
 
 .panel {
+  border-top-left-radius: 25px ;
+  border-bottom-left-radius: 25px;
+  text-align: center;
   position: fixed;
   top: 0;
   right: 0;
   width: 250px; /* Ajusta el ancho del panel según tus necesidades */
   height: 100vh; /* Ocupa toda la altura de la viewport */
-  background-color: rgba(0, 0, 0, 0.386); /* Color de fondo opcional */
+  background-color: rgba(0, 0, 0, 0.767); /* Color de fondo opcional */
+  justify-content: center;
+
+}
+
+.TituloPanel {
+  color: white; /* Cambia el color del texto a blanco */
 }
