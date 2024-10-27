@@ -1,13 +1,14 @@
+// App.js
 import './App.css';
 import Section from './Section';
 import BarraDeFunciones from './BarraDeFunciones';
-import Tablero from './Tablero';
+import Tablero from './Tablero'; // Importa el componente de tablero
+
 import React, { useState } from 'react';
 
 function App() {
-  const [tableros, setTableros] = useState([]);
+  const [tableros, setTableros] = useState([]); // Estado para manejar los tableros
 
-  // Función para agregar un nuevo tablero
   const handleAddTablero = () => {
     const newTablero = { title: `Tablero ${tableros.length + 1}` };
     setTableros([...tableros, newTablero]);
@@ -15,14 +16,9 @@ function App() {
 
   return (
     <div className="Principal">
-      {/* Barra de tareas */}
-      <BarraDeFunciones />
-      
-      {/* Section con el botón para agregar tableros */}
-      <Section onAddTablero={handleAddTablero} />
-
-      {/* Renderizado */}
-      <div className="tableros-container">
+      <BarraDeFunciones onAddTablero={handleAddTablero} /> {/* Pasa la función al componente */}
+      <Section />
+      <div className="tablero-container">
         {tableros.map((tablero, index) => (
           <Tablero key={index} title={tablero.title} />
         ))}

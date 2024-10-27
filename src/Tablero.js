@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Tablero.css';
 function Tablero({ title }) {
   const [notes, setNotes] = useState([]);
 
