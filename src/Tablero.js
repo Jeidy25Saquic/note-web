@@ -1,4 +1,3 @@
-// Tablero.js
 import React from 'react';
 import './Tablero.css';
 

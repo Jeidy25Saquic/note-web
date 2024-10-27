@@ -1,4 +1,3 @@
-// App.js
 import './App.css';
 import Section from './Section';
 import BarraDeFunciones from './BarraDeFunciones';
