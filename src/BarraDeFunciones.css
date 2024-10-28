@@ -19,7 +19,7 @@
     border: none;
     margin: 5px 0; /* Espaciado vertical entre los botones */
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%; /* Hace que los botones ocupen todo el ancho de la barra */

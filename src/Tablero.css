@@ -1,5 +1,5 @@
 .tablero {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   /* Eliminar el border-radius para que ocupe toda la pantalla */
   border-radius: 0;
   /* Eliminar el background-color después de agregar la imagen */
