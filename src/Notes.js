@@ -1,20 +1,11 @@
-import React, { useState } from "react";
-import "./Notes.css";
+// NotaComponent.js
+import React from 'react';
+import './Notes.css'; // Archivo de estilos para NotaComponent
 
-const Notes = () => {
-  const [numberOfNotes] = useState(4);
+const NotaComponent = ({ content }) => (
+  <div className="note">
+    <p>{content}</p>
+  </div>
+);
 
-  return (
-    <div className="Nota">
-      <h1 id="Titulo1">
-        <ul>
-          {Array.from({ length: numberOfNotes }, (_, index) => (
-            <li key={index}>Nota {index + 1}</li>
-          ))}
-        </ul>
-      </h1>
-    </div>
-  );
-};
-
-export default Notes;
+export default NotaComponent;
