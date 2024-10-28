@@ -1,13 +1,13 @@
 .Nota {
-  font-family: 'Dekko', sans-serif;
-    background-color: rgb(228, 191, 6);
-    padding: 20px;
-    width: 400px;
-    height: 200px;
-  }
-  
-  #Titulo1 {
-    font-family: 'Dekko', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-  }
+  font-family: "Dekko", sans-serif;
+  background-color: rgb(228, 191, 6);
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+}
+
+#Titulo1 {
+  font-family: "Dekko", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+}

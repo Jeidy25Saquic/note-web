@@ -1,28 +1,30 @@
 .tablero {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    text-align: center;
-  }
-  /* App.css */
+  border: 1px solid #ccc;
+  /* Eliminar el border-radius para que ocupe toda la pantalla */
+  border-radius: 0;
+  /* Eliminar el background-color después de agregar la imagen */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 88vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* App.css */
 .tablero-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding: 16px;
-  }
-  
-  
-  .tablero h3 {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .tablero p {
-    font-size: 0.9rem;
-    color: #666;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.tablero h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.tablero p {
+  font-size: 0.9rem;
+  color: #666;
+}
