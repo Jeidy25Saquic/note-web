@@ -6,10 +6,10 @@ import NotaComponent from './Notes'; // Importa NotaComponent
 function Tablero({ title, notes }) {
   return (
     <div className="tablero">
-      <h3>{title}</h3>
-      <div className="notes-container">
+      <h2>{title}</h2>
+      <div className="notas-container">
         {notes.map((note, index) => (
-          <NotaComponent key={index} content={note} /> // Renderiza NotaComponent para cada nota
+          <NotaComponent key={index} content={note} />
         ))}
       </div>
     </div>

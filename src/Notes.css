@@ -1,8 +1,13 @@
 /* NotaComponent.css */
 .note {
-  background-color: #f0f0f0;
+  background-color: #ffeb3b;
   border: 1px solid #ccc;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
+  width: 25%; /* Ajusta el ancho para que quepan tres notas en una fila */
+  height: 150px; /* Ajusta la altura para que se vean como cuadritos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: rotate(-3deg); /* Añade un ligero giro para parecer un post-it */
+  position: relative;
 }
