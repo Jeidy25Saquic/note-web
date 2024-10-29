@@ -5,8 +5,8 @@
   padding: 15px;
   margin: 5px;
   border-radius: 8px; /* Bordes más redondeados para suavidad */
-  width: 25%; /* Ajustado para que quepan tres notas en una fila */
-  height: 150px; /* Altura para un aspecto de cuadrito */
+  width: 30vh; /* Ajustado para que quepan tres notas en una fila */
+  height: 180px; /* Altura para un aspecto de cuadrito */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más definida */
   transform: rotate(-2deg); /* Giro leve para parecer un post-it */
   position: relative;
@@ -15,6 +15,7 @@
   font-family: 'LazyDog', sans-serif; /* Usa la fuente LazyDog */
   color: #4b3621; /* Texto oscuro para legibilidad */
 }
+
 /* Pequeño círculo para simular un pin en la parte superior */
 .note::before {
   content: '';
@@ -33,6 +34,7 @@
   transform: rotate(0deg) scale(1.05); /* Endereza y agranda ligeramente */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 .note p {
   margin: 0;
   text-align: center;
