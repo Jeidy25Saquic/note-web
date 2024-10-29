@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# TaskHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Team Members
 
-## Available Scripts
+Jeidy Jennifer Saquic Tecum 1515724
+Justo Geovanny Alcon Mendoza - 1578324
+Brayan Emilio Rodríguez Gómez - 1531724
+Henry Daniel Díaz Corado 2455724
 
-In the project directory, you can run:
+## Aplicacion Web Colaborativa e Insistente
 
-### `npm start`
+La idea detrás del desarrollo de ésta aplicacion es que sea una herramienta que pueda ser usada por varios estudiantes a la vez y que sea insistente en los recordatorios como duolingo, intuitiva para los usuarios y que el colocar una nueva tarea sea más rápido que enviar un ttk 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades Distintivas:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- días consecutivos de trabajo: (pensarlo bien como días o semanas de racha, puesto que no se hacen tareas de cursos todos los días o en otros cursos se hacen proyectos )*
+- Los usuarios que estén llevando el curso pueden agregar tareas y marcar como tarea realizada.
+- cuando se asigna una tarea más pueden sumarla a “pendiente”, de modo que bajo la descripción de la tarea, aparezcan los nombres de los usuarios que la están realizando y después de que alguien la marque como finalizada, se elimina el nombre del usuario de la tarea (para que sea más claro quienes ya han terminado y quienes tienen la tarea pendiente)
+- cuando un usuario agregue una nueva tarea, le aparezca un nota (un recuadro con forma de post it en el escritorio del teléfono o pc, y en la pantalla de bloqueo) (aunque debemos pensar mejor en esta idea porque una vez intentamos algo parecido y windows lo marca como una amenaza  ) **
+- una nueva tarea debe tener título y estado (obligatorios) descripción o fotos (opcional) 
+- la tarea desaparece o deja de ser invasiva cuando todos los usuarios la marquen como finalizada
+- Agregar la metodología de estudio (POMODORO ): 
+- Guardar en la base de datos una tarea: con posibilidad de que alguien agregue una descripción para poder recordar con facilidad de qué trató la tarea y agregar una base de datos de los usuarios (por el taller, esta es una base de datos no relacional ) ** ver si decimos esto en el video
+- Sistemas de recompensas: ( cuando se termina una tarea le da al usuario cierta cantidad de monedas al primero que la termine, y menos cantidad de monedas al que la termine de último para fomentar la competitividad) para poder personalizar la interfaz
