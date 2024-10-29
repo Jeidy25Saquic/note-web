@@ -1,0 +1,76 @@
+/* NotaComponent.css */
+.note {
+  background-color: #ffeb3b; /* Amarillo estilo post-it */
+  border: 1px solid #e0b124; /* Borde más oscuro para contraste */
+  padding: 15px;
+  margin: 5px;
+  border-radius: 8px; /* Bordes más redondeados para suavidad */
+  width: 25%; /* Ajustado para que quepan tres notas en una fila */
+  height: 150px; /* Altura para un aspecto de cuadrito */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más definida */
+  transform: rotate(-2deg); /* Giro leve para parecer un post-it */
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave en hover */
+  font-family: 'LazyDog', sans-serif; /* Usa la fuente LazyDog */
+  color: #4b3621; /* Texto oscuro para legibilidad */
+}
+/* Pequeño círculo para simular un pin en la parte superior */
+.note::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #c50606; /* Color de pin */
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.note:hover {
+  transform: rotate(0deg) scale(1.05); /* Endereza y agranda ligeramente */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.note p {
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+  overflow: hidden; /* Oculta desbordamiento de texto */
+  text-overflow: ellipsis; /* Muestra "..." si el texto es muy largo */
+}
+/* Notes.css */
+
+.note {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  position: relative;
+  z-index: 10;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

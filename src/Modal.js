@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React, { useState } from 'react';
 
 function Modal({ task, onClose }) {
@@ -30,5 +31,27 @@ function Modal({ task, onClose }) {
     </div>
   );
 }
+=======
+// Modal.js
+// Modal.js
+import React from 'react';
+import './Modal.css';
+
+const Modal = ({ isOpen, onClose, content }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="close-button" onClick={onClose}>X</button>
+        <div className="modal-body">
+          <h2>Detalles de la Nota</h2>
+          <p>{content}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+>>>>>>> Stashed changes
 
 export default Modal;
