@@ -1,7 +1,22 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'LazyDog';
+  src: url('./LazyDog.woff2') format('woff2');
 }
 
+.App {
+  font-family: 'LazyDog', sans-serif;
+  text-align: center;
+}
+.h1
+{
+color: blue;
+
+}
+.tablero{
+  background-color: #c7631f; /* Color madera claro */
+  border: 2px solid #A78A7F; /* Bordes con tono madera más oscuro */
+  background: #A78A7F;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,7 +36,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:black;
 }
 
 .App-link {

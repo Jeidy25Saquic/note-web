@@ -1,0 +1,90 @@
+
+.barra-de-funciones {
+    display: flex;
+    flex-direction: column; /* Orienta la barra verticalmente */
+    align-items: center;
+    background: linear-gradient(to bottom, #000000cf, #000000ac);
+    padding: 10px;
+    border-radius: 5px 0 0 5px; /* Bordes redondeados en el lado izquierdo */
+    position: fixed; /* Fija la barra en la pantalla */
+    top: 0;
+    right: 0; /* Ancla la barra al borde derecho */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+  }
+  
+  .boton-funcion {
+    font-family: 'LazyDog', sans-serif;
+    background-color: #fded8f;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin: 5px 0; /* Espaciado vertical entre los botones */
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Hace que los botones ocupen todo el ancho de la barra */
+    text-align: center;
+    font-size: 3.5vh;
+  }
+  
+  .boton-funcion {
+    transition: all 0.3s ease;
+  }
+  
+  .boton-funcion:hover {
+    background-color: rgba(255, 204, 0, 0.733);
+    transform: scale(1.1);
+  }
+  .barra-de-funciones {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .boton-funcion {
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .calendario {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  .calendario-header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .calendario-dias, .calendario-fechas {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .calendario-dias div {
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .calendario-fechas {
+    margin-top: 5px;
+  }
+  
+  .calendario-dia {
+    text-align: center;
+    padding: 4px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    color: #333;
+  }

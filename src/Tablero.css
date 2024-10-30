@@ -1,0 +1,32 @@
+/* NotaComponent.css */
+/* NotaComponent.css */
+.tablero {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(100vw - 200px); /* Ajusta el ancho para que no se pase por debajo de la barra de funciones */
+  height: 88vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Permite el desplazamiento vertical si hay muchas notas */
+}
+
+.notas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.note {
+  background-color: #ffeb3b;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 30%; /* Ajusta el ancho para que quepan tres notas en una fila */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: rotate(-3deg); /* Añade un ligero giro para parecer un post-it */
+  position: relative;
+}
