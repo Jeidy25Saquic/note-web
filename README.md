@@ -1,8 +1,8 @@
 # TaskHub
 
-Esta es una aplicación para realizar tareas de forma colaborativa con compañeros de clase que lleven el mismo curso, la aplicación puede almacenar tareas, enviar notificaciones a los usuarios y aplicar técnicas de estudio.
+Esta es una aplicación para realizar tareas de forma colaborativa con compañeros de clase que lleven el mismo curso, la aplicación puede almacenar tareas, enviar notificaciones a los usuarios y aplicar técnicas de estudio. (la aplicacion está desplegada con vercel), pueden interactuar con ella, adelante adjunto una pequeña guia de lo que nuestro prototipo puede hacer
 
-# Recursos Necesarios para Ejecutar la aplicación 
+# Recursos Necesarios para Ejecutar el codigo fuente de la aplicación 
 
 Node.js
 
@@ -14,10 +14,12 @@ Entorno de Desarollo de React
 
 Para realizar la aplicación decidimos usar el FrameWork react con el que realizamos la parte del diseño y las funcionalidades, decidimos usar éste FrameWork porque es el que pensamos que era más fácil de usar.
 
-# Funcionalidades Implementadas
+# Funcionalidades Implementadas y Manual de Usuario
 
-- Agregar y editar Tablero : esta funcionalidad crea tableros y permite editar el nombre.
-- Agregar Tarea: Nos permite generar una tarea para interactuar.
+- Agregar y editar Tablero : esta funcionalidad crea tableros y permite editar el nombre. (el boton "+" de arriba a la izquierda agrega un nuevo tablero)
+- Editar nombre del tablero: se debe hacer doble clic para poder editar el nombre del tablero
+- seleccionar un tablero: se debe hacer clic en el boton del tablero para seleccionarlo, cuando se selecciona un tablero se puede agregar una nueva tarea
+- Agregar Tarea: Nos permite generar una nota para interactuar.
 - Tarea: nos permite agregar una descripción de la tarea.
 
 # En Ctrl
