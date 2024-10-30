@@ -12,6 +12,11 @@
 color: blue;
 
 }
+.tablero{
+  background-color: #c7631f; /* Color madera claro */
+  border: 2px solid #A78A7F; /* Bordes con tono madera más oscuro */
+  background: #A78A7F;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
