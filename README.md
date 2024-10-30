@@ -22,3 +22,8 @@ La idea detrás del desarrollo de ésta aplicacion es que sea una herramienta qu
 - Agregar la metodología de estudio (POMODORO ): 
 - Guardar en la base de datos una tarea: con posibilidad de que alguien agregue una descripción para poder recordar con facilidad de qué trató la tarea y agregar una base de datos de los usuarios (por el taller, esta es una base de datos no relacional ) ** ver si decimos esto en el video
 - Sistemas de recompensas: ( cuando se termina una tarea le da al usuario cierta cantidad de monedas al primero que la termine, y menos cantidad de monedas al que la termine de último para fomentar la competitividad) para poder personalizar la interfaz
+
+# Propuesta de base de datos:
+![image](https://github.com/user-attachments/assets/1eef88f5-c4ce-4e1f-aac6-7a115bb63392)
+
+
