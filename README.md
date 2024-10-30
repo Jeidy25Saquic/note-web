@@ -5,7 +5,9 @@ Esta es una aplicación para realizar tareas de forma colaborativa con compañer
 # Recursos Necesarios para Ejecutar la aplicación 
 
 Node.js
+
 Visual Studio Code
+
 Entorno de Desarollo de React
 
 # Tecnologías Usadas
