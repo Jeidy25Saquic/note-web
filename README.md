@@ -49,7 +49,7 @@ La idea detrás del desarrollo de ésta aplicacion es que sea una herramienta qu
 
 # Link de la Aplicación desplegada:
 
-
+https://note-web-kappa.vercel.app/
 
 # Propuesta de base de datos:
 ![image](https://github.com/user-attachments/assets/1eef88f5-c4ce-4e1f-aac6-7a115bb63392)
