@@ -1,11 +1,26 @@
 # TaskHub
 
-# Team Members
+Este es una aplicación para realizar tareas de forma colaborativa con compañeros de clase que lleven el mismo curso, la aplicación puede almacenar almacenar tareas, enviar notificaciones a los usuarios y aplicar técnicas de estudio.
 
-Jeidy Jennifer Saquic Tecum 1515724
+# Tecnologías Usadas
+
+Para realizar la aplicación decidimos usar el FrameWork react con el que realizamos la parte del diseño y las funcionalidades, decidimos usar éste FrameWork porque es el que pensamos que era más fácil de usar.
+
+# Funcionalidades Implementadas
+
+- Agregar y editar Tablero : esta funcionalidad crea tableros y permite editar el nombre.
+- Agregar Tarea: Nos permite generar una tarea para interactuar.
+- Tarea: nos permite agregar una descripción de la tarea.
+
+# En Ctrl
+
+Jeidy Jennifer Saquic Tecum - 1515724
+
 Justo Geovanny Alcon Mendoza - 1578324
+
 Brayan Emilio Rodríguez Gómez - 1531724
-Henry Daniel Díaz Corado 2455724
+
+Henry Daniel Díaz Corado - 2455724
 
 ## Aplicacion Web Colaborativa e Insistente
 
